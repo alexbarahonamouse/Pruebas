@@ -74,3 +74,10 @@ C:\Users\alexa\source\repos\SchoolCF\SchoolCF\obj\Debug\SchoolCF.csproj.CoreComp
 C:\Users\alexa\source\repos\SchoolCF\SchoolCF\obj\Debug\SchoolCF.csproj.CopyComplete
 C:\Users\alexa\source\repos\SchoolCF\SchoolCF\obj\Debug\SchoolCF.dll
 C:\Users\alexa\source\repos\SchoolCF\SchoolCF\obj\Debug\SchoolCF.pdb
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\Antlr3.Runtime.dll
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\Newtonsoft.Json.dll
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\System.Web.Optimization.dll
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\WebGrease.dll
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\Antlr3.Runtime.pdb
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\Newtonsoft.Json.xml
+C:\Users\alexa\source\repos\SchoolCF\SchoolCF\bin\System.Web.Optimization.xml

@@ -46,17 +46,28 @@ namespace SchoolCF.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StudentID,StudentName,DateOfBirth")] Student student)
+        [ValidateAntiForgeryToken]  // tendria que entrar por aca pero no se que pasa
+         public ActionResult Create([Bind(Include = "StudentID,StudentName,DateOfBirth")] Student student)
+       //public ActionResult Create( Student student)
         {
             if (ModelState.IsValid)
             {
                 db.Students.Add(student);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                //return RedirectToAction("Index");
+                return PartialView("View",
+                        db.Students.OrderByDescending(x => x.DateOfBirth).ToList());
             }
 
-            return View(student);
+            // return View(student);
+            return null;
+        }
+
+        public ActionResult CrearEstudianteAjax(Student student)
+        {
+            db.Students.Add(student);
+            db.SaveChanges();
+            return Json("Exito", JsonRequestBehavior.AllowGet);
         }
 
         // GET: Students/Edit/5

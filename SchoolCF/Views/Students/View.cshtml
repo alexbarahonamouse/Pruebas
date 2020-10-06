@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SchoolCF.Models.Student>
+@{
+    ViewBag.Title = "View";
+}
+
+@foreach (var student in Model)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+               
+                <span>@student.StudentName</span>&nbsp;
+                <span>@student.DateOfBirth</span>
+            </div>
+         
+            <hr />
+        </div>
+    </div>
+}
